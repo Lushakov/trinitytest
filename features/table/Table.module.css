@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    height: auto;
+    border: 1px solid gray;
+    margin: 50px 0;
+    background: white;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.cell {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    border-left: 1px solid gray;
+}
+
+.cell:first-child {
+    border-left: none;
+}
+.baseInfo {
+    height: 60px;
+    width: 100%;
+}
+.addInfo {
+    border-top: 1px solid gray;
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    background: rgb(255, 252, 243);
+    display: none;
+}
+
+[active=true] > .addInfo {
+    display: block;
+    
+}
+[active=true] > .baseInfo {
+    background: cornsilk;
+}
+[active=true].row {
+    font-weight: 600;
+}
+
+.addInfo div {
+    float: left;
+    margin-right: 50px;
+    padding: 5px;
+}
