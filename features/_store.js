@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import tableReducer from '../features/table/tableSlice';
+import tableReducer from './table/tableSlice';
 
 export default configureStore({
   reducer: {

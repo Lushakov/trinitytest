@@ -35,9 +35,6 @@ export const typeGroupSelector = createSelector(
   );
 
 
-
-
-
 export const searchSelector = createSelector(
     [typeGroupSelector, getSearchText],
     (data, searchText) => {

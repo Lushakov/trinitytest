@@ -16,7 +16,6 @@ import styles from './Table.module.css'
 
 const Table = () => {
     const dispatch = useDispatch();
-    // const data = useSelector(selectData);
     const data = useSelector(sortSelector);
     const isLoading = useSelector(selectLoading);
     const error = useSelector(selectError);
